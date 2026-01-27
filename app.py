@@ -1,5 +1,6 @@
-import os from flask
-import flask from azure.cosmos import CosmosClient
+import os
+from flask import Flask 
+from azure.cosmos import CosmosClient
 
 app = Flask(_name_)
 url = os.environ.get("COSMOS_ENDPOINT")
