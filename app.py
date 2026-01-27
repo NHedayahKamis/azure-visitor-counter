@@ -13,8 +13,6 @@ def fello():
   return "<h1>Hello! This is my Project 2 Website.</h1><p>The visitor counter is coming next!</p>"
   item = container.read_item(item="1", partition_key="1")
   item['count'] += 1
-  current_count = item['count']
-  item['count' = current_count + 1
   container.upsert_item(item)
   return f"<h1>Welcome!</h1><p>You are visitor number: {item['count']}</p>"
 
